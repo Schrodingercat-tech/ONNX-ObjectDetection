@@ -48,7 +48,7 @@ int main() {
 
 	}
 
-	/*print(
+	print(
 
 		"\n__________ONNX Model info__________\n",
 		"\nInput Name : ", input_names[0],
@@ -56,7 +56,7 @@ int main() {
 		"\nOutput Name : ", output_names[0],
 		"\nOutput shape : [", output_shape[0], output_shape[1], output_shape[2], "]"
 
-	);*/
+	);
 
 	// the above part will be standard for any type of models
 
@@ -101,11 +101,11 @@ int main() {
 	size_t input_tensor_size; // 1*3*640*640 it wouldn't work for dynamic sizes(-1)
 	std::vector<float> input_tensor_data((float*)FlattenImage.datastart, (float*)FlattenImage.dataend);// just provide the start and end pointers that gives flatten vec
 
-	/*print("\nInput Tensor Size : ",
+	print("\nInput Tensor Size : ",
 		input_tensor_data.size(),
 		"\nRaw Output from Image : ", resized.size(),
 		"\ncompare both above results if they are matching"
-	);*/
+	);
 
 
 	// define memory info
